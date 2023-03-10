@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test_firefox(failed)">
+    <parameter name="URL" value="https://www.flipkart.com/"/>
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="FlipKart.FlipKartDemo">
+        <methods>
+          <include name="MaxWindow"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- FlipKart.FlipKartDemo -->
+    </classes>
+  </test> <!-- Test_firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
